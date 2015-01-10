@@ -1,0 +1,30 @@
+<html>
+<body> 
+  <canvas id="the_canvas" width="400" height="400"></canvas>
+  
+  <script>
+    var boxprompt = parseInt(prompt("Pick a number for boxes:"));
+    
+    var colorbox = ["rgb(255, 85, 215", "green", "#34bdef"];
+    var col = 0;
+
+    var canvas = document.getElementById('the_canvas');
+    var ctx = canvas.getContext('2d');
+    
+        for (i = 0; i <= boxprompt; i++) {
+            var x = Math.floor(Math.random()*(400 - 1) + 1);
+            var y = Math.floor(Math.random()*(400 - 1) + 1);
+            
+            if (col === 3) {
+                col = 0;
+            }
+                var bcolor = colorbox[col];
+                
+                ctx.fillStyle = (bcolor);
+                ctx.fillRect (x, y, 40, 40);
+                col++
+        }
+
+  </script>
+</body>
+</html>

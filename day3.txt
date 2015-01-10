@@ -1,0 +1,20 @@
+Objectives
+	1. Understand arrays in Javascript
+	2. Further your understanding of loops with for loops
+	3. Continue using canvas
+
+
+ARRAYS
+
+var beatles = ["John", "Paul", "George", "Ringo"];
+var stuff = [1, "John"]
+
+beatles[0] //John
+beatles[1] = "Sam" // ["John", "Sam", "George", "Ringo"]
+beatles.push("Paul"); // ["John", "Sam", "George", "Ringo", "Paul
+beatles.length // 5 elements
+
+
+for (var i = 0; i < beatles.length; i++) {
+	console.log(beatles[i]);
+}
